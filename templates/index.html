@@ -10,22 +10,6 @@
       background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
       color: #f4f4f4;
     }
-      .social-links {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      align-items: center;
-    }
-      .social-links img.icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 12px;
-      transition: transform 0.3s ease;
-    }
-      .social-links img.icon:hover {
-      transform: scale(1.1);
-    }
 
     h1 {
       font-size: 2.5em;
@@ -57,17 +41,21 @@
 
     .social-links {
       margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
     }
 
     .icon {
-      width: 80px;
+      width: 100px;
       height: auto;
-      margin: 0 15px;
-      transition: transform 0.3s;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
     }
 
     .icon:hover {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
 
     a.button-link {
@@ -100,10 +88,10 @@
 
   <div class="social-links">
     <a href="https://github.com/AJAYPUNIA" target="_blank">
-      <img src="/static/GitHub__pic.jpeg" alt="GitHub" class="icon">
+      <img src="{{ url_for('static', filename='GitHub__pic.webp') }}" alt="GitHub" class="icon">
     </a>
     <a href="https://www.linkedin.com/in/ajaypunia01/" target="_blank">
-      <img src="/static/linkedin_pic.jpeg" alt="LinkedIn" class="icon">
+      <img src="{{ url_for('static', filename='linkedin_pic.png') }}" alt="LinkedIn" class="icon">
     </a>
   </div>
 
